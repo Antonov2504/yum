@@ -7,7 +7,6 @@
   min-height: 100vh;
   width: calc(100% - 19px * 2);
   margin: 0 auto;
-  background-color: pink;
 }
 
 @media screen and (min-width: 600px) {
@@ -26,6 +25,6 @@
 @media screen and (min-width: 1280px) {
   .page__container {
     width: calc(100% - 200px * 2);
-    max-width: 880px;
+    max-width: 1200px;
   }
 }
