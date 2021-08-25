@@ -1,0 +1,32 @@
+.section__title {
+  width: 100%;
+  margin: 15px 0;
+  color: #e41300;
+  font-size: 20px;
+  line-height: 1.2;
+  font-family: inherit;
+  font-weight: 500;
+}
+
+.section__title:first-child {
+  margin: 0 0 15px;
+}
+
+@media screen and (min-width: 600px) {
+  .section__title {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .section__title {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .section__title {
+    font-size: 40px;
+    line-height: 1.3;
+  }
+}

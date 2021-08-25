@@ -1,0 +1,41 @@
+.section__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  opacity: .2;
+  z-index: -1;
+}
+
+@media screen and (min-width: 600px) {
+  .section__image {
+    width: 29vw;
+    height: 29vw;
+    max-width: 240px;
+    max-height: 240px;
+    position: initial;
+    top: initial;
+    left: initial;
+    bottom: initial;
+    right: initial;
+    margin: 0;
+    opacity: 1;
+    z-index: 1;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .section__image {
+    width: 35vw;
+    height: 35vw;
+    max-width: 290px;
+    max-height: 290px;  
+  }
+}

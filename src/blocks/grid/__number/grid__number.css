@@ -1,0 +1,13 @@
+.grid__number {
+  font-size: 40px;
+  opacity: .3;
+  position: absolute;
+  top: 15px;
+  left: 1vw;
+}
+
+@media screen and (min-width: 600px) {
+  .grid__number {
+    display: none;
+  }
+}

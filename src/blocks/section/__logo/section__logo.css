@@ -1,0 +1,11 @@
+.section__logo {
+  display: block;
+  width: 100px;
+}
+
+@media screen and (min-width: 600px) {
+  .section__logo {
+    margin: 0 20px 10px 0;
+    width: 140px;
+  }
+}

@@ -1,0 +1,24 @@
+.section__text {
+  margin: 0 0 10px;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.4;
+  position: relative;
+}
+
+.section__text:last-of-type {
+  margin: 0;
+}
+
+@media screen and (min-width: 600px) {
+  .section__text {
+    margin: 0 0 10px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .section__text {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+}

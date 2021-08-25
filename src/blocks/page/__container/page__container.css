@@ -5,7 +5,7 @@
   align-items: center;
   min-width: 282px;
   min-height: 100vh;
-  width: calc(100% - 19px * 2);
+  width: calc(100% - 15px * 2);
   margin: 0 auto;
 }
 
@@ -18,13 +18,13 @@
 
 @media screen and (min-width: 800px) {
   .page__container {
-    width: calc(100% - 100px * 2);
+    width: calc(100% - 50px * 2);
   }
 }
 
 @media screen and (min-width: 1280px) {
   .page__container {
     width: calc(100% - 200px * 2);
-    max-width: 1200px;
+    max-width: 880px;
   }
 }

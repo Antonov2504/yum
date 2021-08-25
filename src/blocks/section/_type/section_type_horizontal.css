@@ -1,0 +1,10 @@
+.section_type_horizontal {
+  align-items: flex-start;
+  position: relative;
+}
+
+@media screen and (min-width: 1280px) {
+  .section_type_horizontal {
+    align-items: center;
+  }
+}

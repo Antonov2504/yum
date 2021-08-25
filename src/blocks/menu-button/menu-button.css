@@ -1,0 +1,17 @@
+.menu-button {
+  border: 0;
+  font-family: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity .3s;
+}
+
+@media screen and (min-width: 800px) {
+  .menu-button {
+    display: none;
+  }
+  
+  .menu-button:hover {
+    opacity: .8;
+  }
+}

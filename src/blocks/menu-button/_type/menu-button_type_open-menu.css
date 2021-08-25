@@ -1,0 +1,31 @@
+.menu-button_type_open-menu {
+  background-color: #e41300;
+  width: 28px;
+  height: 3px;
+  position: relative;
+  transition: transform .3s ease-in-out;
+  z-index: 4;
+}
+
+.menu-button_type_open-menu::before {
+  content: '';
+  width: 28px;
+  height: 3px;
+  background-color: #e41300;
+  position: absolute;
+  top: -10px;
+  left: 0;
+  transition: .3s ease-in-out;
+  transition-property: top, transform, background-color;
+}
+
+.menu-button_type_open-menu::after {
+  content: '';
+  width: 28px;
+  height: 3px;
+  background-color: #e41300;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  transition: top .3s ease-in-out;
+}

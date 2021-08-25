@@ -1,3 +1,37 @@
 .menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  padding: 50px 15px;
   margin: 0;
+  background-color: #e41300;
+  opacity: 1;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  right: -100vw;
+  transition: right .3s ease-in-out;
+  z-index: 3;
+}
+
+@media screen and (min-width: 600px) {
+  .menu {
+    width: 50vw;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .menu {
+    flex-direction: row;
+    width: initial;
+    height: initial;
+    padding: 0;
+    background-color: initial;
+    position: relative;
+    top: initial;
+    right: initial;
+  }
 }

@@ -1,0 +1,17 @@
+.section__description_type_horizontal {
+  width: 100%;
+  background-color: rgba(255 255 255 / .4);
+}
+
+@media screen and (min-width: 800px) {
+  .section__description_type_horizontal {
+    width: 54%;
+    background-color: initial;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .section__description_type_horizontal {
+    width: 65%;
+  }
+}

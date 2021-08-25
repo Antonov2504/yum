@@ -1,0 +1,28 @@
+.menu-button_type_close-menu {
+  transform: rotateZ(45deg);
+  position: fixed;
+  top: 40px;
+  right: 15px;
+}
+
+.menu-button_type_close-menu::before {
+  content: '';
+  background-color: #fff;
+  transform: rotateZ(-90deg);
+  top: 0;
+  left: 0;
+}
+
+.menu-button_type_close-menu::after {
+  content: '';
+  background-color: #fff;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (min-width: 600px) {
+  .menu-button_type_close-menu {
+    top: 30px;
+    right: 30px;
+  }
+}

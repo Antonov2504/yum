@@ -1,0 +1,8 @@
+.swiper-pagination-bullet {
+  width: 30px;
+  height: 3px;
+  display: inline-block;
+  border-radius: 2px;
+  background: #fff;
+  opacity: 0.2;
+}

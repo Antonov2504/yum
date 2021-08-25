@@ -1,0 +1,24 @@
+.card__title {
+  margin: 0 0 10px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 900;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 800px) {
+  .card__title {
+    padding: 0 10px;
+    font-weight: 500;
+    color: #e41300;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .card__title {
+    margin: 0 0 15px;
+    padding: 0 15px;
+  }
+}

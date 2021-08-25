@@ -1,0 +1,15 @@
+.staff__item {
+  padding: 10px;
+  border-bottom: 0;
+  box-shadow: none;
+  background-color: initial;
+  transform: rotateY(0deg);
+  transition: transform .3s ease-in-out;
+  position: relative;
+}
+
+@media screen and (min-width: 600px) {
+  .staff__item {
+    padding: 20px;
+  }
+}

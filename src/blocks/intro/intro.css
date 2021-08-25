@@ -1,0 +1,39 @@
+.intro {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100vw;
+  height: 320px;
+  padding: 2vw 5vw;
+  margin: 0 0 20px;
+  color: #fff;
+  background-color: rgba(0 0 0 / .4);
+  box-sizing: border-box;
+  position: relative;
+}
+
+@media screen and (min-width: 600px) {
+  .intro {
+    width: calc(100% + 30px * 2);
+    height: 270px;
+    padding: 3% 5% 3% 53%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .intro {
+    width: calc(100% + 50px * 2);
+    height: 350px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .intro {
+    width: calc(100% + 100px * 2);
+    height: 450px;
+    padding: 5% 5% 5% 60%;
+    margin: 0 0 40px;
+  }
+}

@@ -1,0 +1,5 @@
+.staff__info_type_inverted {
+  transform: rotateY(360deg);
+  opacity: 1;
+  visibility: visible;
+}

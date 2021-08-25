@@ -1,19 +1,35 @@
 .menu__link {
-  margin: 0 15px 0 0;
+  margin: 0 0px 20px 0;  
   font-family: inherit;
-  font-size: 14px;
-  line-height: 1.16;
-  color: #999;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #fff;
   text-decoration: none;
-  cursor: pointer;
+  opacity: .7;
+  transition: opacity .3s ease-in-out;
 }
 
-.menu__link:not(.menu__link_active):hover {
-  color: #333;
-  /* opacity: .7; */
+.menu__link:last-of-type {
+  margin: 0;
 }
 
-.menu__link_active {
-  font-weight: 500;
-  color: #e41300;
+@media screen and (min-width: 800px) {
+  .menu__link {
+    margin: 0 10px 0 0;
+    font-size: 14px;
+    color: inherit;
+    opacity: .4;
+    cursor: pointer;
+  }
+
+  .menu__link:not(.menu__link_active):hover {
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .menu__link {
+    margin: 0 15px 0 0;
+    font-size: 16px;
+  }
 }

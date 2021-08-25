@@ -1,0 +1,5 @@
+.anchor_hidden {
+  visibility: hidden;
+  opacity: 0;
+  right: -10vw;
+}

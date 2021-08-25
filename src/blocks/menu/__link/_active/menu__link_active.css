@@ -1,0 +1,16 @@
+.menu__link_active {
+  font-weight: 500;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  padding: 0 0 5px;
+  box-sizing: border-box;
+  opacity: 1;
+}
+
+@media screen and (min-width: 800px) {
+  .menu__link_active {
+    color: #e41300;
+    border-bottom: 0;
+    padding: 0;
+  }
+}
