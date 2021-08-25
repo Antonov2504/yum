@@ -32,7 +32,7 @@
 
 @media screen and (min-width: 800px) {
   .slide__description {
-    padding: 5% 11vh 3% 47%;
+    padding: 5% 7vh 3% 47vw;
   }
 
   .slide__description::before {

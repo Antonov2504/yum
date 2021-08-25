@@ -8,7 +8,7 @@
   font-weight: 500;
 }
 
-.section__title:first-child {
+.section__title:not(.section__title_margin_null):first-child {
   margin: 0 0 15px;
 }
 

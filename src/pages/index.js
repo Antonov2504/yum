@@ -1,5 +1,6 @@
 // Initialize Swiper
 const swiper = new Swiper('.swiper-container', {
+  loop: true,
   cssMode: true,
   navigation: {
     nextEl: '.swiper-button-next',
