@@ -27,6 +27,7 @@
 @import url('../blocks/section/section.css');
 @import url('../blocks/section/_order/section_order_reverse.css');
 @import url('../blocks/section/_type/section_type_horizontal.css');
+@import url('../blocks/section/_display/section_display_block.css');
 @import url('../blocks/section/__description/section__description.css');
 @import url('../blocks/section/__description/_type_horizontal/section__description_type_horizontal.css');
 @import url('../blocks/section/__title/section__title.css');
