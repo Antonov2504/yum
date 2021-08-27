@@ -1,19 +1,20 @@
 .menu-button_type_open-menu {
-  background-color: #e41300;
-  width: 28px;
-  height: 3px;
+  background: linear-gradient(to bottom, transparent 11px, #e41300 11px, #E41300 14px, transparent 14px);
+  width: 27px;
+  height: 25px;
   position: relative;
   transition: transform .3s ease-in-out;
   z-index: 4;
+  box-sizing: border-box;
 }
 
 .menu-button_type_open-menu::before {
   content: '';
-  width: 28px;
+  width: 27px;
   height: 3px;
   background-color: #e41300;
   position: absolute;
-  top: -10px;
+  top: 0;
   left: 0;
   transition: .3s ease-in-out;
   transition-property: top, transform, background-color;
@@ -21,11 +22,11 @@
 
 .menu-button_type_open-menu::after {
   content: '';
-  width: 28px;
+  width: 27px;
   height: 3px;
   background-color: #e41300;
   position: absolute;
-  top: 10px;
   left: 0;
+  bottom: 0;
   transition: top .3s ease-in-out;
 }
