@@ -5,31 +5,33 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./vendor/normalize.css">
-  <link rel="stylesheet" href="./vendor/fonts/fonts.css">
-  <link rel="stylesheet" href="./pages/culture.css">
-  <title>Yum! - Культура KFC</title>
+  <!-- <link rel="stylesheet" href="./vendor/normalize.css"> -->
+  <!-- <link rel="stylesheet" href="./vendor/fonts/fonts.css"> -->
+  <!-- <link rel="stylesheet" href="./pages/culture.css"> -->
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
 </head>
 
 <body class="page">
   <div class="page__container">
     <header class="header">
-      <a href="./index.html"><img src="./images/logo.jpg" alt="KFC Skills Hub" class="header__logo" lang="en" /></a>
+      <a href="./index.html"><img src="<%=require('./images/logo.jpg')%>" alt="KFC Skills Hub" class="header__logo" lang="en" /></a>
       <!-- Navigation menu -->
       <nav class="menu">
-        <a href="./index.html" class="menu__link">Главная</a>
+        <!-- <a href="./index.html" class="menu__link">Главная</a>
         <a href="./digital.html" class="menu__link">Digital</a>
         <a href="./culture.html" class="menu__link menu__link_active">Культура KFC</a>
         <a href="#" class="menu__link">Новое лидерство</a>
         <a href="./training.html" class="menu__link">Обучение</a>
-        <a href="#" class="menu__link">Программы</a>
+        <a href="#" class="menu__link">Программы</a> -->
       </nav>
       <button type="button" class="menu-button menu-button_type_open-menu"></button>
     </header>
     <main class="main">
       <section class="section intro">
         <img
-             src="./images/main/slide-3.jpeg"
+             src="<%=require('./images/main/slide-3.jpeg')%>"
              alt="Сотрудники KFC веселятся на мероприятии, дружеская обстановка, все обнимаются и улыбаются"
              class="intro__background">
         <h1 class="intro__title">Уникальная культура KFC</h1>
@@ -41,7 +43,7 @@
         <ul class="cards">
           <li class="card">
             <img
-                 src="./images/culture/abr.jpg"
+                 src="<%=require('./images/culture/abr.jpg')%>"
                  alt="ABR club"
                  class="card__image" />
             <h4 class="card__title">ABR Club Online</h4>
@@ -50,7 +52,7 @@
           </li>
           <li class="card">
             <img
-                 src="./images/culture/heart.jpg"
+                 src="<%=require('./images/culture/heart.jpg')%>"
                  alt="Leading with Heart"
                  class="card__image" />
             <h4 class="card__title">Virtual Leading with Heart</h4>
@@ -59,7 +61,7 @@
           </li>
           <li class="card">
             <img
-                 src="./images/culture/health.jpg"
+                 src="<%=require('./images/culture/health.jpg')%>"
                  alt="Руки заботливо окружают круг бумажных человечков"
                  class="card__image" />
             <h4 class="card__title">Забота о сотрудниках</h4>
@@ -78,7 +80,7 @@
           <p class="section__text">Концепция тренинга «Достижение прорывных результатов» основана на известной теории Дж. О’Кифа. В ходе тренинга рассматривается более 50-ти инструментов, повышающих эффективность сотрудников.</p>
         </div>
         <img
-             src="./images/culture/abr-club.jpg"
+             src="<%=require('./images/culture/abr-club.jpg')%>"
              alt="Логотип ABR Club, ниже ноутбук, на экране полковник Сандерс сидит в кресле у камина и играет на гитаре."
              class="section__image section__image_type_horizontal" />
         <h2 class="section__title">Детали программы</h2>
@@ -100,7 +102,7 @@
           <li class="grid__item grid__item_size_double-row">
             <span class="grid__number">3</span>
             <div class="grid__icon"><i class="fas fa-info"></i></div>
-            <img src="./images/culture/hill.jpg" alt="Покоренная вершина с флагом наверху" class="grid__image">
+            <img src="<%=require('./images/culture/hill.jpg')%>" alt="Покоренная вершина с флагом наверху" class="grid__image">
             <p class="grid__title">Основная информация</p>
             <p class="section__text">Продолжительность программы: 3 онлайн сессии по 1,5 часа</p>
             <p class="section__text">Провайдер: Корпоративный Университет KFC! Russia</p>
@@ -115,7 +117,7 @@
         <ul class="cards">
           <li class="card">
             <img
-                 src="./images/culture/card-1.jpg"
+                 src="<%=require('./images/culture/card-1.jpg')%>"
                  alt="Ученики с сертификатами"
                  class="card__image" />
             <h4 class="card__title">Функциональное образование</h4>
@@ -124,7 +126,7 @@
           </li>
           <li class="card">
             <img
-                 src="./images/culture/card-2.jpg"
+                 src="<%=require('./images/culture/card-2.jpg')%>"
                  alt="Сотрудники KFC поют песню, выступают на сцене"
                  class="card__image" />
             <h4 class="card__title">Развитие лидерства</h4>
@@ -133,7 +135,7 @@
           </li>
           <li class="card">
             <img
-                 src="./images/culture/card-3.jpg"
+                 src="<%=require('./images/culture/card-3.jpg')%>"
                  alt="Сотрудницы KFC на конференции"
                  class="card__image" />
             <h4 class="card__title">Корпоративная культура</h4>
@@ -145,14 +147,14 @@
     </main>
     <footer class="footer">
       <p class="footer__text">&copy; 2012-2021 YUM! Corporate University</p>
-      <img src="./images/main/CUlogo.jpg" alt="KFC" class="footer__logo">
+      <img src="<%=require('./images/main/CUlogo.jpg')%>" alt="KFC" class="footer__logo">
     </footer>
     <div class="cover cover_hidden"></div>
     <div class="anchor anchor_hidden" id="toTop"><i class="fas fa-chevron-up"></i></div>
   </div>
-  <script src="https://kit.fontawesome.com/187ecec49e.js" crossorigin="anonymous"></script>
-  <script src="./vendor/utils/menu.js" defer></script>
-  <script src="./vendor/utils/transitionToAnchor.js" defer></script>
+  <!-- <script src="https://kit.fontawesome.com/187ecec49e.js" crossorigin="anonymous"></script> -->
+  <!-- <script src="./vendor/utils/menu.js" defer></script>
+  <script src="./vendor/utils/transitionToAnchor.js" defer></script> -->
 </body>
 
 </html>

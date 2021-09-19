@@ -1,4 +1,8 @@
-const staffElement = document.querySelector('.staff');
+export default class DoubleSidedCard {
+  constructor(cardSelector) {
+    this._element = document.querySelector(cardSelector);
+  }
+}
 
 staffElement.addEventListener('click', (evt) => {
   const button = evt.target;

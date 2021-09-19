@@ -42,6 +42,7 @@
 
 @media screen and (min-width: 1280px) {
   .section__image_type_horizontal {
+    flex: initial;
     width: 33%;
     max-width: initial;
     max-height: initial;

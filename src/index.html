@@ -5,25 +5,27 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./vendor/normalize.css">
+  <!-- <link rel="stylesheet" href="./vendor/normalize.css">
   <link rel="stylesheet" href="./vendor/fonts/fonts.css">
   <link rel="stylesheet" href="./vendor/swiper/swiper-bundle.min.css">
-  <link rel="stylesheet" href="./pages/index.css">
-  <title>Yum!</title>
+  <link rel="stylesheet" href="./pages/index.css"> -->
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
 </head>
 
 <body class="page">
   <div class="page__container">
     <header class="header">
-      <a href="./index.html"><img src="./images/logo.jpg" alt="KFC Skills Hub" class="header__logo" lang="en" /></a>
+      <a href="./index.html"><img src="<%=require('./images/logo.jpg')%>" alt="KFC Skills Hub" class="header__logo" lang="en" /></a>
       <!-- Navigation menu -->
       <nav class="menu">
-        <a href="./index.html" class="menu__link menu__link_active">Главная</a>
+        <!-- <a href="./index.html" class="menu__link menu__link_active">Главная</a>
         <a href="./digital.html" class="menu__link">Digital</a>
         <a href="./culture.html" class="menu__link">Культура KFC</a>
         <a href="#" class="menu__link">Новое лидерство</a>
         <a href="./training.html" class="menu__link">Обучение</a>
-        <a href="#" class="menu__link">Программы</a>
+        <a href="#" class="menu__link">Программы</a> -->
       </nav>
       <button type="button" class="menu-button menu-button_type_open-menu"></button>
     </header>
@@ -35,7 +37,7 @@
             <!-- Slide №1 -->
             <figure class="swiper-slide slide">
               <img
-                   src="./images/main/slide-1.png"
+                   src="<%=require('./images/main/slide-1.png')%>"
                    alt="Мобильные устройства, на экранах которых представлены люди и логотип digital-трансформации KFC"
                    class="slide__image" />
               <figcaption class="slide__description">
@@ -47,7 +49,7 @@
             <!-- Slide №2 -->
             <figure class="swiper-slide slide">
               <img
-                   src="./images/main/slide-2.jpeg"
+                   src="<%=require('./images/main/slide-2.jpeg')%>"
                    alt="Высокий мужчина проводит лекцию на тему лидерства группе лиц в небольшой светлой аудитории. Он стоит около стола, все его внимательно слушают."
                    class="slide__image" />
               <figcaption class="slide__description">
@@ -59,7 +61,7 @@
             <!-- Slide №3 -->
             <figure class="swiper-slide slide">
               <img
-                   src="./images/main/slide-3.jpeg"
+                   src="<%=require('./images/main/slide-3.jpeg')%>"
                    alt="Сотрудники KFC веселятся на мероприятии, дружеская обстановка, все обнимаются и улыбаются"
                    class="slide__image" />
               <figcaption class="slide__description">
@@ -82,11 +84,11 @@
           <p class="section__text">Новая реальность предъявляет большие требования к навыкам и умениям сотрудников. Сегодня очень важно иметь ряд важных компетенций, чтобы оставаться успешным в работе и современном мире.</p>
           <p class="section__text">B тeкyщeй peaльнocти ocнoвнyю poль cтaли игpaть digital инcтpyмeнты, yдaлeнный фopмaт paбoты и диcтaнциoннoe oбyчeниe.</p>
           <p class="section__text">Mы cлeдим зa тpeндaми и пocтoяннo oбнoвляeм нaши пpoгpaммы, внeдpяя диджитaльныe тexнoлoгии и coздaвaя исключительный oпыт oбyчeния.</p>
-          <img src="./images/logo.jpg" alt="KFC Skills Hub" class="section__logo" lang="en" />
+          <img src="<%=require('./images/logo.jpg')%>" alt="KFC Skills Hub" class="section__logo" lang="en" />
           <p class="section__text">Это уникальная возможность для вас прокачать свои скиллы, стать более успешными, и помогать достигать компании и бизнесу самые смелые цели!</p>
         </div>
         <img
-             src="./images/main/life-learning.png"
+             src="<%=require('./images/main/life-learning.png')%>"
              alt="Мобильное устройство, на экране идет обучение в онлайн формате, участники конференции общаются друг с другом."
              class="section__image section__image_type_horizontal" />
       </section>
@@ -95,7 +97,7 @@
         <ul class="cards">
           <li class="card">
             <img
-                 src="./images/main/slide-1.png"
+                 src="<%=require('./images/main/slide-1.png')%>"
                  alt="Мобильные устройства, на экранах которых представлены люди и логотип digital-трансформации KFC"
                  class="card__image" />
             <h4 class="card__title">Digital трансформация</h4>
@@ -104,7 +106,7 @@
           </li>
           <li class="card">
             <img
-                 src="./images/main/slide-3.jpeg"
+                 src="<%=require('./images/main/slide-3.jpeg')%>"
                  alt="Высокий мужчина проводит лекцию на тему лидерства группе лиц в небольшой светлой аудитории. Он стоит около стола, все его внимательно слушают."
                  class="card__image" />
             <h4 class="card__title">Уникальная культура KFC</h4>
@@ -113,7 +115,7 @@
           </li>
           <li class="card">
             <img
-                 src="./images/main/slide-2.jpeg"
+                 src="<%=require('./images/main/slide-2.jpeg')%>"
                  alt="Мобильные устройства, на экранах которых представлены люди и логотип digital-трансформации KFC"
                  class="card__image" />
             <h4 class="card__title">Новое лидерство</h4>
@@ -122,7 +124,7 @@
           </li>
           <li class="card">
             <img
-                 src="./images/main/slide-1.png"
+                 src="<%=require('./images/main/slide-1.png')%>"
                  alt="Мобильные устройства, на экранах которых представлены люди и логотип digital-трансформации KFC"
                  class="card__image" />
             <h4 class="card__title">Обучение для ресторанов</h4>
@@ -131,7 +133,7 @@
           </li>
           <li class="card">
             <img
-                 src="./images/main/slide-3.jpeg"
+                 src="<%=require('./images/main/slide-3.jpeg')%>"
                  alt="Мобильные устройства, на экранах которых представлены люди и логотип digital-трансформации KFC"
                  class="card__image" />
             <h4 class="card__title">Другие программы</h4>
@@ -140,7 +142,7 @@
           </li>
           <li class="card">
             <img
-                 src="./images/main/slide-2.jpeg"
+                 src="<%=require('./images/main/slide-2.jpeg')%>"
                  alt="Мобильные устройства, на экранах которых представлены люди и логотип digital-трансформации KFC"
                  class="card__image" />
             <h4 class="card__title">Physical Mental&Health</h4>
@@ -159,7 +161,7 @@
           <p class="section__text">Мы создаем культуру непрерывного обучения. Получать новые знания тогда, когда тебе это удобно в твоем собственном ритме и теми способами, которые предпочитаешь именно ты. А мы поддержим тебя разнообразием удобных и легко доступных онлайн инструментов (The Vault, Eduson, МИФ, VCN и др.).</p>
         </div>
         <img
-             src="./images/main/section-1.jpg"
+             src="<%=require('./images/main/section-1.jpg')%>"
              alt="Мобильное устройство, на экране идет обучение в онлайн формате, участники конференции общаются друг с другом."
              class="section__image" />
       </section>
@@ -170,7 +172,7 @@
           <p class="section__text">Мы работаем в компании, которая привлекает лучшие таланты и настоящий экспертов из различных областей. Это дает тебе уникальную возможность учиться у профессионалов и перенимать лучшие практики во время совместной работы и общения с ними.</p>
         </div>
         <img
-             src="./images/main/section-2.jpg"
+             src="<%=require('./images/main/section-2.jpg')%>"
              alt="Мобильное устройство, на экране идет обучение в онлайн формате, участники конференции общаются друг с другом."
              class="section__image" />
       </section>
@@ -181,23 +183,23 @@
           <p class="section__text">Новая реальность во многом погрузила нас в мир онлайн и диджитал, но необходимость живого общения никуда не исчезла, а приобрела даже большую силу. Онлайн и оффлайн тренинги, обучающие корпоративные мероприятия и функциональные колледжи- это уникальная возможность не только приобрести профессиональные знания, но и зарядиться энергией и вдохновением, почувствовав себя частью одной большой команды KFC, в которой разделяет общие ценности, поддерживают и уважают друг друга.</p>
         </div>
         <img
-             src="./images/main/section-3.jpg"
+             src="<%=require('./images/main/section-3.jpg')%>"
              alt="Мобильное устройство, на экране идет обучение в онлайн формате, участники конференции общаются друг с другом."
              class="section__image" />
       </section>
     </main>
     <footer class="footer">
       <p class="footer__text">&copy; 2012-2021 YUM! Corporate University</p>
-      <img src="./images/main/CUlogo.jpg" alt="KFC" class="footer__logo">
+      <img src="<%=require('./images/main/CUlogo.jpg')%>" alt="KFC" class="footer__logo">
     </footer>
     <div class="cover cover_hidden"></div>
     <div class="anchor anchor_hidden" id="toTop"><i class="fas fa-chevron-up"></i></div>
   </div>
-  <script src="./vendor/swiper/swiper-bundle.min.js" defer></script>
+  <!-- <script src="./vendor/swiper/swiper-bundle.min.js" defer></script>
   <script src="https://kit.fontawesome.com/187ecec49e.js" crossorigin="anonymous"></script>
   <script src="./pages/index.js" defer></script>
   <script src="./vendor/utils/menu.js" defer></script>
-  <script src="./vendor/utils/transitionToAnchor.js" defer></script>
+  <script src="./vendor/utils/transitionToAnchor.js" defer></script> -->
 </body>
 
 </html>
