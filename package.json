@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/Antonov2504/yum/issues"
   },
-  "homepage": "https://github.com/Antonov2504/yum#readme",
+  "homepage": "https://github.com/Antonov2504/yum/src",
   "devDependencies": {
     "@babel/core": "^7.15.5",
     "@babel/preset-env": "^7.15.6",
